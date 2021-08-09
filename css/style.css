@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px dotted red; */
 }
 body {
     background: rgb(247, 224, 227);
@@ -20,14 +21,19 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
-
 .card .left-card {
     width: 50%;
     background: white;
+    
+}
+.left-card .container-left {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    width: 75%;
+    height: 100%;
+    margin: auto;
 }
 .card .left-card .title {
     margin-top: 20px;
@@ -53,13 +59,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-}.card .left-card .login input {
+}
+.card .left-card .login input {
     color: rgb(224, 224, 224);
-    width: 75%;
     padding: 10px;
     background: rgb(231, 231, 231);
     border: none;
     font-size: 0.8em;
+    width: 100%;
 }
 .card .left-card .login span {
     color: rgb(92, 92, 92);
@@ -97,7 +104,7 @@ body {
 input + input {
     margin-top: 15px;
 }
-.right-card .container {
+.right-card .container-right {
     margin: auto;
     color: white;
     text-align: center;
@@ -108,7 +115,7 @@ input + input {
     width: 75%;
     height: 100%;
 }
-.right-card .container p {
+.right-card .container-right p {
     font-size: 0.8em;
     font-weight: 300;
 }
